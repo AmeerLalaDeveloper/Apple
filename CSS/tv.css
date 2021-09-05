@@ -1,0 +1,207 @@
+/**/
+:root {
+  --primary-color: #b9b9b9;
+  --secondary-color: #7f7f7f;
+  --dark-color: #333333;
+  --footer-color: #dcdcf0;
+}
+
+/*CORE STYLE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html,
+body {
+  font-size: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  position: relative;
+}
+
+/*
+header*/
+/* height: 100px; */
+#main-heading {
+  background: #333;
+  width: 100vw;
+}
+#main-heading .global-navbar {
+  margin: auto;
+  max-width: 1260px;
+}
+
+#main-heading .global-navbar .navbar ul {
+  list-style-type: none;
+
+  height: 100%;
+}
+#main-heading .global-navbar .navbar img {
+  padding: 0 5rem;
+}
+#main-heading .global-navbar .navbar ul li a {
+  line-height: 3;
+  padding: 5rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #cecece;
+  font-size: 1.75rem;
+  transition: all 1s ease;
+}
+#main-heading global-navbar .navbar ul li a:hover {
+  color: white;
+}
+
+/*NavBar Chapter*/
+
+.navbar-chapter {
+  background: #333;
+  width: 100%;
+}
+.navbar-chapter .navbar-chapter-items {
+  width: 70%;
+  margin: auto;
+}
+.navbar-chapter .navbar-chapter-items ul {
+  width: 100%;
+  list-style-type: none;
+}
+.navbar-chapter .navbar-chapter-items ul li {
+  padding: 2rem;
+}
+
+.navbar-chapter .navbar-chapter-items ul li .link-box {
+  display: flex;
+  position: relative;
+
+  height: 100%;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
+}
+.navbar-chapter .navbar-chapter-items ul li .link-box:hover {
+  cursor: pointer;
+}
+.navbar-chapter .navbar-chapter-items ul li .link-box img {
+  width: 50x;
+  height: 85px;
+  object-fit: cover;
+}
+.navbar-chapter .navbar-chapter-items ul li .link-box a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/*Video*/
+#video {
+  height: 123vh;
+  position: relative;
+}
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  opacity: 0.8;
+  min-width: 100vw;
+  z-index: -10;
+  object-fit: cover;
+}
+#video .content {
+  flex-direction: column;
+  z-index: 20;
+}
+
+#video .content img:first-child {
+  width: 200px;
+  height: 200px;
+}
+#video .content img:nth-child(2) {
+  width: 300px;
+  height: 200px;
+
+  margin-bottom: 10px;
+}
+#video .content button {
+  width: 70%;
+  padding: 2rem;
+  font-size: 2rem;
+  border-radius: 25px;
+}
+#video .content button i {
+  margin-left: 10px;
+}
+#video .content button:hover {
+  background: transparent;
+  cursor: pointer;
+}
+/*Section TV 4K*/
+#tv-4k {
+  width: 100vw;
+  text-align: center;
+  border: 1px solid green;
+  flex-direction: column;
+}
+#tv-4k header {
+  margin: 50px;
+}
+#tv-4k header span {
+  display: block;
+  font-size: 2.5rem;
+  color: red;
+  margin-bottom: 50px;
+}
+#tv-4k header img {
+  width: 150px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+#tv-4k header h2 {
+  font-size: 10rem;
+  margin-bottom: 20px;
+}
+#tv-4k header .links a {
+  font-size: 3rem;
+  padding: 0 2rem;
+  text-decoration: none;
+}
+#tv-4k header .links a:first-child {
+  background: blue;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 2rem;
+}
+#tv-4k header .links a:last-child i {
+  margin-left: 10px;
+}
+#tv-4k header .links a:last-child:hover {
+  text-decoration: underline;
+}
+
+/*tv-4k Content*/
+#tv-4k .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 50%;
+  min-height: 100%;
+  object-fit: cover;
+  background: url("https://www.apple.com/v/tv/home/an/images/overview/apple_tv_4k_remote__nuhoyzf08qaq_medium.jpg")
+    no-repeat center/cover;
+}
+#tv-4k .content {
+  height: auto;
+  width: 100vw;
+  height: 120vh;
+  position: relative;
+}

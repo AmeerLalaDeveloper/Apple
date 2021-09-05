@@ -1,0 +1,417 @@
+/**/
+:root {
+  --primary-color: #b9b9b9;
+  --secondary-color: #7f7f7f;
+  --dark-color: #333333;
+  --footer-color: #dcdcf0;
+}
+
+/*CORE STYLE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  position: relative;
+}
+
+/*Utilities*/
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+.clr {
+  clear: both;
+}
+
+p {
+  padding: 1rem;
+  line-height: 1.5;
+}
+/*Header-Navbar*/
+header {
+  height: 10vh;
+  width: 100%;
+  margin-bottom: 40px;
+  /* position: fixed; */
+}
+
+#navbar {
+  background: var(--dark-color);
+  width: 100vw;
+  position: fixed;
+  margin-bottom: 15px;
+  justify-content: s;
+  top: 0;
+}
+
+#navbar .navbar-menu {
+  max-width: 1300px;
+  height: 100%;
+  font-size: 2rem;
+  line-height: 2.5;
+  margin: auto;
+}
+
+#navbar .navbar-menu .logo {
+  float: left;
+  width: 5%;
+}
+#navbar .navbar-menu ul {
+  float: right;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 95%;
+}
+#navbar .navbar-menu ul li a {
+  padding: 0 4rem;
+  text-align: center;
+
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.4s ease;
+}
+#navbar .navbar-menu ul li a:hover {
+  color: #fff;
+}
+#header .header-title {
+  display: flex;
+  width: 100%;
+  text-align: center;
+
+  justify-content: center;
+}
+#header .header-title p {
+  font-size: 1.75rem;
+}
+#header .header-title a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Sections*/
+section {
+  height: 90vh;
+  margin-bottom: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section .section-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 50%;
+  align-items: center;
+}
+
+section .section-info h2 {
+  font-size: 7rem;
+  padding: 2rem;
+}
+
+section .section-info h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+section .section-info p {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  line-height: 1.2;
+}
+section .section-info .links a i {
+  margin-left: 10px;
+}
+section .section-info .links a {
+  font-size: 3rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+}
+section .section-info .links a:hover {
+  text-decoration: underline;
+}
+
+section .section-img {
+  height: 50%;
+  width: 100%;
+}
+
+/*Section Images*/
+
+.iphone12 {
+  background: url("../images/hero/hero-1.jpg") no-repeat center center/cover;
+}
+.iphone12-pro {
+  opacity: 0.9;
+  background: url("../images/hero/hero-2.jpg") no-repeat center center/cover;
+}
+.apple-tv {
+  background: url("../images/hero/hero-3.jpg") no-repeat center center/cover;
+}
+
+/*Section 2 iphone12 pro*/
+.iphone12-pro .section-info h2,
+.iphone12-pro .section-info h3 {
+  color: #fff;
+}
+
+/*Section 3 apple tv*/
+
+.apple-tv .apple-tv-container {
+  justify-content: flex-end;
+  height: 100%;
+  flex-direction: column;
+}
+.apple-tv .apple-tv-container img {
+  margin: 20px;
+}
+.apple-tv .apple-tv-logo {
+  width: 150px;
+}
+
+.apple-tv .apple-tv-container a {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+.apple-tv .apple-tv-container a i {
+  margin-left: 10px;
+}
+
+/*GRID
+*/
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 0.75rem;
+}
+
+.grid-container .grid-item {
+  height: 80vh;
+}
+.grid-container .grid-item .content {
+  margin-top: 30px;
+  text-align: center;
+}
+.grid-container .grid-item .content h2 {
+  font-size: 5rem;
+}
+.grid-container .grid-item .content h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+/*Grid Item 1*/
+.grid-container .item-1 {
+  align-items: unset;
+  color: #fff;
+  background: url("../images/grid-img/grid-1.jpg") no-repeat center center/cover;
+}
+
+.grid-container .item-1 .content a {
+  font-size: 2rem;
+  margin: 0 20px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.grid-container .item-1 .content a:hover {
+  text-decoration: underline;
+}
+/*Grid Item 2*/
+.grid-container .item-2 {
+  align-items: unset;
+  color: #fff;
+  background: url("../images/grid-img/grid-2.jpg") no-repeat center center/cover;
+}
+.grid-container .item-2 .content img {
+  width: 100px;
+}
+.grid-container .item-2 .content a {
+  font-size: 2rem;
+  margin: 0 20px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.grid-container .item-2 .content a:hover {
+  text-decoration: underline;
+}
+/*Grid Item 3*/
+.grid-container .item-3::before {
+  content: "";
+  background: #000;
+  opacity: 2;
+  position: absolute;
+  z-index: -1;
+  width: 90%;
+  height: 70%;
+  top: 30%;
+  left: 0;
+  background: url("../images/grid-img/grid-3.jpg") no-repeat center center/cover;
+}
+.grid-container .item-3 {
+  align-items: unset;
+  color: #000;
+  z-index: 2;
+  position: relative;
+}
+.grid-container .item-3 h2 {
+  margin-bottom: 20px;
+}
+.grid-container .item-3 h3 {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.grid-container .item-3 .content a {
+  font-size: 2rem;
+  margin: 0 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.grid-container .item-3 .content a:hover {
+  text-decoration: underline;
+}
+
+/*Grid Item 4*/
+
+.grid-container .item-4 {
+  align-items: unset;
+  background: url("../images/grid-img/grid-4.jpg") no-repeat center center/cover;
+}
+
+.grid-container .item-4 .content a {
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.grid-container .item-4 .content a:hover {
+  text-decoration: underline;
+}
+
+/*Grid Item 5*/
+
+.grid-container .item-5 {
+  align-items: unset;
+
+  background: url("../images/grid-img/grid-5.jpg") no-repeat center center/cover;
+}
+
+.grid-container .item-5 .content h3 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  width: 60%;
+  margin: auto;
+}
+.grid-container .item-5 .content a {
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.grid-container .item-5 .content a:hover {
+  text-decoration: underline;
+}
+
+/*Grid Item 6*/
+
+.grid-container .item-6 {
+  color: #fff;
+  align-items: unset;
+
+  background: url("../images/grid-img/grid-6.jpg") no-repeat center center/cover;
+}
+.grid-container .item-6 .content a {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.grid-container .item-6 .content a:hover {
+  text-decoration: underline;
+}
+/*Footer*/
+/*MARVEL*/
+#footer {
+  background: var(--footer-color);
+}
+#footer .footer-container {
+  width: 70%;
+
+  flex-direction: column;
+
+  margin: auto;
+}
+#footer .footer-container .marvel-info {
+  margin: 20px 0;
+}
+#footer .footer-container .marvel-info ul {
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+#footer .footer-container .marvel-info ul li p {
+  font-size: 1.5rem;
+}
+
+/*Footer*/
+/*APPLE*/
+
+.apple-info .list-grid {
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+  display: grid;
+  padding-bottom: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+}
+.apple-info .list-grid ul {
+  flex-direction: column;
+  text-align: center;
+}
+.apple-info .list-grid h5 {
+  font-size: 2rem;
+}
+.apple-info .list-grid ul li {
+  font-size: 2rem;
+}
+
+.apple-info > p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/*Last Div Of Footer On The Bottom*/
+.apple-info .apple-rights {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.apple-info .apple-rights ul li {
+  border-right: 1px solid gray;
+  padding: 0 1rem;
+}
+
+.apple-info .apple-rights ul li:last-child {
+  border: none;
+}
